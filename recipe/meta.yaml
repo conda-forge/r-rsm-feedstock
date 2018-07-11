@@ -1,4 +1,4 @@
-{% set version = '2.8' %}
+{% set version = "2.9" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/rsm_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/rsm/rsm_{{ version }}.tar.gz
-  sha256: dd7594a3d4183fb334a7023276ca551cd7894d38f4cfb00e88b3632e8b54d4c2
+  sha256: d172384d5b60aa969c6ad81ee696b9d78364b5be0d9e7d63d80b12b269c342e6
 
 build:
   number: 0
