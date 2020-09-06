@@ -1,4 +1,4 @@
-{% set version = '2.10' %}
+{% set version = "2.10.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rsm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rsm/rsm_{{ version }}.tar.gz
-  sha256: 8c565b870d13801554582fc1ca72889c7dceed155be2172d05a4290c56eecb28
+  sha256: 66446cfb4298f1b306be286d1f2cd8b7f68acc900d3cc0d9a054aa48e192091c
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1002
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -39,13 +39,10 @@ test:
 about:
   home: https://CRAN.R-project.org/package=rsm
   license: GPL (>= 2)
-  summary: 'Provides functions to generate response-surface designs,  fit first- and second-order
-    response-surface models,  make surface plots, obtain the path of steepest ascent,  and
-    do canonical analysis. A good reference on these methods  is Chapter 10 of Wu, C-F
-    J and Hamada, M (2009)  "Experiments: Planning, Analysis, and Parameter Design Optimization"
-    ISBN 978-0-471-69946-0.'
+  summary: 'Provides functions to generate response-surface designs,  fit first- and second-order response-surface models,  make surface plots, obtain the path of steepest ascent,  and do canonical analysis. A good reference on these methods  is Chapter 10 of Wu, C-F J and Hamada, M (2009)  "Experiments: Planning, Analysis,
+    and Parameter Design Optimization" ISBN 978-0-471-69946-0.'
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
