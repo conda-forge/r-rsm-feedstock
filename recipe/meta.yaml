@@ -1,4 +1,4 @@
-{% set version = "2.10.2" %}
+{% set version = "2.10.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rsm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rsm/rsm_{{ version }}.tar.gz
-  sha256: 66446cfb4298f1b306be286d1f2cd8b7f68acc900d3cc0d9a054aa48e192091c
+  sha256: ef72888ab05c8d9ac8750e83633de551973fe693fb0cd8e36d381fc587d592b5
 
 build:
   noarch: generic
