@@ -1,11 +1,11 @@
-About r-rsm
-===========
+About r-rsm-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rsm-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=rsm
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rsm-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides functions to generate response-surface designs,  fit first- and second-order response-surface models,  make surface plots, obtain the path of steepest ascent,  and do canonical analysis. A good reference on these methods  is Chapter 10 of Wu, C-F J and Hamada, M (2009)  "Experiments: Planning, Analysis, and Parameter Design Optimization" ISBN 978-0-471-69946-0.
 
