@@ -1,4 +1,4 @@
-{% set version = "2.10.4" %}
+{% set version = "2.10.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rsm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rsm/rsm_{{ version }}.tar.gz
-  sha256: 505445b2f06b4e306fdacfaecc0c26327b96e2828ffab4e1ccfa8320c19d02ae
+  sha256: 001b1e6a5477f3853f8a05a49214c34083d666d261d183157241a7d7d5d28f18
 
 build:
   merge_build_host: true  # [win]
