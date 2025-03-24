@@ -1,4 +1,4 @@
-{% set version = "2.10.5" %}
+{% set version = "2.10.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rsm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rsm/rsm_{{ version }}.tar.gz
-  sha256: 001b1e6a5477f3853f8a05a49214c34083d666d261d183157241a7d7d5d28f18
+  sha256: d276a933c1641fedbc8023a21ab86a3c7a7e2e31b6e0b71b8525cd810b4bbfff
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
